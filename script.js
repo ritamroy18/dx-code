@@ -12,6 +12,11 @@ var data = '';
 // }
 
 options.forEach((value, index) => {
+<<<<<<< HEAD
+=======
+
+    // document.getElementsByTagName("li").setAttribute("data-value", index);
+>>>>>>> aacc754dbe23c6d01fb5b430640ba2ca51ad20b7
 
     // console.log(`i value: ${index} | Value:`, value.textContent);
     // data += '<li  data-value="' + index + '">' + value.textContent + '</li>'
@@ -21,7 +26,10 @@ options.forEach((value, index) => {
     li.appendChild(document.createTextNode(data));
     ul.appendChild(li);
     select.parentElement.append(ul);
+<<<<<<< HEAD
     
+=======
+>>>>>>> aacc754dbe23c6d01fb5b430640ba2ca51ad20b7
 
 });
 
