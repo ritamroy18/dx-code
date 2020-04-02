@@ -12,9 +12,7 @@ var data = '';
 // }
 
 options.forEach((value, index) => {
-
-    // document.getElementsByTagName("li").setAttribute("data-value", index);
-
+    
     // console.log(`i value: ${index} | Value:`, value.textContent);
     // data += '<li  data-value="' + index + '">' + value.textContent + '</li>'
     data = value.textContent;
