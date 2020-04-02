@@ -12,7 +12,7 @@ var data = '';
 // }
 
 options.forEach((value, index) => {
-    
+
     // console.log(`i value: ${index} | Value:`, value.textContent);
     // data += '<li  data-value="' + index + '">' + value.textContent + '</li>'
     data = value.textContent;
@@ -21,6 +21,7 @@ options.forEach((value, index) => {
     li.appendChild(document.createTextNode(data));
     ul.appendChild(li);
     select.parentElement.append(ul);
+    
 
 });
 
