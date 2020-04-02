@@ -19,20 +19,12 @@ options.forEach((value, index) => {
     // data += '<li  data-value="' + index + '">' + value.textContent + '</li>'
     data = value.textContent;
     var li = document.createElement('li');    //Create Element with li
-    li.classList.add('select-dropdown-item');
     li.setAttribute("data-value", index);
-
     li.appendChild(document.createTextNode(data));
-     select.parentElement.append(li);
-
+    ul.appendChild(li);
+    select.parentElement.append(ul);
 
 });
-// ul.innerHTML = all;
-//     select.parentElement.append(ul);
-// li.appendChild = data;
-
-
-
 
 //select
 //option
