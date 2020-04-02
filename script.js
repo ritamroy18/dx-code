@@ -21,6 +21,7 @@ options.forEach((value, index) => {
     li.appendChild(document.createTextNode(data));
     ul.appendChild(li);
     select.parentElement.append(ul);
+    
 
 });
 
