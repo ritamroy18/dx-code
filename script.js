@@ -1,7 +1,12 @@
 // var select = document.getElementById("test");
-var select = document.querySelector('.test'); //Select by Class 
+var select = document.querySelectorAll('.test'); //Select by Class 
+console.log(select);
+
+for (var i = 0; i < select.length; i++) {
+
 var options = Array.from(select.children);
 console.log(options);
+
 var ul = document.createElement('ul');
 ul.classList.add('select-dropdown');
 
@@ -23,6 +28,8 @@ options.forEach((value, index) => {
     ul.appendChild(li);
 
 });
+}
+
 select.parentElement.append(ul);
 
 
