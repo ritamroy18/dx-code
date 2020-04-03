@@ -1,4 +1,5 @@
-var select = document.getElementById("test");
+// var select = document.getElementById("test");
+var select = document.querySelector('.test'); //Select by Class 
 var options = Array.from(select.children);
 console.log(options);
 var ul = document.createElement('ul');
@@ -20,9 +21,10 @@ options.forEach((value, index) => {
     li.setAttribute("data-value", index);
     li.appendChild(document.createTextNode(data));
     ul.appendChild(li);
-    select.parentElement.append(ul);
 
 });
+select.parentElement.append(ul);
+
 
 //select
 //option
