@@ -2,9 +2,10 @@
 var select = document.querySelectorAll('.test'); //Select by Class 
 console.log(select);
 
-for (var i = 0; i < select.length; i++) {
-
-var options = Array.from(select.children);
+// for (var i = 0; i < select.length; i++) {
+select.forEach((value) => {
+// var options = Array.from(select[i].children);
+var options = Array.from(value.children);
 console.log(options);
 
 var ul = document.createElement('ul');
@@ -18,7 +19,6 @@ var data = '';
 // }
 
 options.forEach((value, index) => {
-
     // console.log(`i value: ${index} | Value:`, value.textContent);
     // data += '<li  data-value="' + index + '">' + value.textContent + '</li>'
     data = value.textContent;
@@ -26,11 +26,14 @@ options.forEach((value, index) => {
     li.setAttribute("data-value", index);
     li.appendChild(document.createTextNode(data));
     ul.appendChild(li);
+});
+// select[i].parentElement.append(ul);
+value.parentElement.append(ul);
 
 });
-}
 
-select.parentElement.append(ul);
+// }
+
 
 
 //select
