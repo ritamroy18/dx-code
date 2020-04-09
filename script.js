@@ -77,17 +77,17 @@ document.addEventListener('click', function (e) {
 
 // Hide the list if clicks outside of the input box
 
-document.addEventListener('click', function (e) {
-  if(!e.target.classList.contains('custom-select')){
+// document.addEventListener('click', function (e) {
+//   if(!e.target.classList.contains('custom-select')){
 
-    console.log(document.querySelectorAll('.select-dropdown'));
-    document.querySelectorAll('.select-dropdown').forEach(function(i,n){
-      i.style.display = 'none';
-    })
-    // document.querySelectorAll('.select-dropdown').style.display = 'none';
+//     console.log(document.querySelectorAll('.select-dropdown'));
+//     document.querySelectorAll('.select-dropdown').forEach(function(i,n){
+//       i.style.display = 'none';
+//     })
+//     // document.querySelectorAll('.select-dropdown').style.display = 'none';
 
-  }
-})
+//   }
+// })
 // After li clicks list hide and value moved to the text box
 
 document.addEventListener('click', function (e) {
